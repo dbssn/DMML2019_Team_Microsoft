@@ -1,6 +1,6 @@
 # DMML2019_Team_Microsoft
 
-## Team Microsoft members
+## Team Microsoft members   
 
 - Besson, Dario – MLaw in Legal Issues, Crime and Security of IT (UNIL)
 - Fleck, Alyssa – MLaw in Legal Issues, Crime and Security of IT (UNIL)
@@ -25,3 +25,11 @@ Source: City of Chicago (2019, November 9). Food Inspections. Chicago Data Porta
 
 The methods used for this project will primarily be classification and text analytics. The latter would be used to process textual information (i.e. “description of the findings that caused the violation”) in order to compute a score that would indicate if the staff comments are positive or negative.
 Logistic regression seems to be a valid approach for the second step which would be a binary classification (“fail” or “pass”) or multiclass classification (if the third class “pass with conditions” was added).
+
+
+## Post-feedback remarks :
+
+- Classifying the inspection staff's comments could be tricky due to unlabelled data. One possibility could be to use the risk indicator 1 (low) and 3 (high) and the inspection result to train the classifier. The underlying assumption is that comments for high risk establishments should be more negative and comments for low risk establishments more positive. The feasibility still has to be discussed.
+- One feature that could be taken into account would be the temperature average in the last 5 days before inspection.
+- Another feature could be the cuisine type (https://developer-tripadvisor.com/content-api/business-content/cuisines/) accessed through TripAdvisor API.
+- TripAdvisor API allows requests about the "cleanliness rating" and could be use as a feature. There is one issue though, only the current rating can be retrieved, which does not reflect the rating variation over time.
