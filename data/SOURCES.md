@@ -18,7 +18,7 @@ This file contains the business licenses the City issued as of November 17, 2019
 **Source:** City of Chicago (2019, November 17). Business Licenses. _Chicago Data Portal._ Retrieved from https://data.cityofchicago.org/Community-Economic-Development/Business-Licenses/r5kz-chrr (2019, November 17).
 
 ## NOAA Weather history
-This file contains the weather history for CHICAGO MIDWAY AIRPORT station from January 1, 2010 to November 16, 2019.
+This file contains the weather history for Chicago Midway Airport station from January 1, 2010 to November 16, 2019.
 
 **Link:** https://drive.switch.ch/index.php/s/2jkVQUWgcMxE8Yh
 
