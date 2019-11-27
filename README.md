@@ -12,6 +12,8 @@
 The goal for this project is to identify restaurants/food establishments that are likely to fail the next food inspection based on the results of previous reviews. The main challenge lies in the proper use of temporal and textual data contained in the set.
 Food safety is not to be taken lightly as it is a matter of public health. Food inspections aim to reduce the sanitary risks associated with poor practices in the food service industry. Building a model that would help large cities predict which establishments to target first would further mitigate these risks.
 
+_Update (November 25 2019) :_ The goal was adapted : the project aims to predict the result of inspections based on the data set which is
+
 ## The data
 
 The data set was found on the City of Chicago's data portal. The City provides records for past food inspections conducted from January 1, 2010 to the present. The dimensionality is 17, while the cardinality is 195’736 (as of ‎November 9th, ‎2019, ‏‎16:06).
@@ -26,10 +28,18 @@ Source: City of Chicago (2019, November 9). Food Inspections. Chicago Data Porta
 The methods used for this project will primarily be classification and text analytics. The latter would be used to process textual information (i.e. “description of the findings that caused the violation”) in order to compute a score that would indicate if the staff comments are positive or negative.
 Logistic regression seems to be a valid approach for the second step which would be a binary classification (“fail” or “pass”) or multiclass classification (if the third class “pass with conditions” was added).
 
+_Update (November 25 2019) :_ The initial idea was to work on time series. Due to time constraint, the scope of the project was adapted. The classification will be applied to inspections individually with a variety of classifiers which has to be determined.
 
-## Post-feedback remarks :
+
+## Post-feedback remarks (November 18 2019) :
 
 - Classifying the inspection staff's comments could be tricky due to unlabelled data. One possibility could be to use the risk indicator 1 (low) and 3 (high) and the inspection result to train the classifier. The underlying assumption is that comments for high risk establishments should be more negative and comments for low risk establishments more positive. The feasibility still has to be discussed.
 - One feature that could be taken into account would be the temperature average in the last 5 days before inspection.
 - Another feature could be the cuisine type (https://developer-tripadvisor.com/content-api/business-content/cuisines/) accessed through TripAdvisor API.
 - TripAdvisor API allows requests about the "cleanliness rating" and could be use as a feature. There is one issue though, only the current rating can be retrieved, which does not reflect the rating variation over time.
+
+## Post-feedback remarks (November 25 2019) :
+
+- The scope of the project was adapted.
+- Text analysis for violations was ruled out.
+- In July 2018, there was a change in the regulation. As a result, new violations were created and the classification (minor, serious, critical) changed. Dropping the inspections that occurred after July 1 could solve the issue. Alternatively, the "Violations" feature could be dropped and compensated with other features (ex : total duration of activity).

@@ -18,11 +18,11 @@ This file contains the business licenses the City issued as of November 17, 2019
 **Source:** City of Chicago (2019, November 17). Business Licenses. _Chicago Data Portal._ Retrieved from https://data.cityofchicago.org/Community-Economic-Development/Business-Licenses/r5kz-chrr (2019, November 17).
 
 ## NOAA Weather history
-This file contains the weather history for Chicago Midway Airport station from January 1, 2010 to November 16, 2019.
+This file contains the maximum air temperature (in °C) for Chicago Midway Airport station from December, 15 2009 to November 16, 2019.
 
-**Link:** https://drive.switch.ch/index.php/s/2jkVQUWgcMxE8Yh/download
+**Link:** https://drive.switch.ch/index.php/s/ui6Zr1v2vzPlieH/download
 
-**Source:** National Oceanic and Atmospheric Administration (2019, November 17).  Daily Summaries Location Details. _National Centers for Environmental Information._ Retrieved from https://www.ncdc.noaa.gov/cdo-web/datasets/GHCND/locations/CITY:US170006/detail (2019, November 17).
+**Source:** National Oceanic and Atmospheric Administration (2019, November 25).  Daily Summaries Location Details. _National Centers for Environmental Information._ Retrieved from https://www.ncdc.noaa.gov/cdo-web/datasets/GHCND/locations/CITY:US170006/detail (2019, November 25).
 
 ## Neighbourhoods boundaries
 This file contains the boundaries for each neighbourhood in Chicago City.
