@@ -12,7 +12,7 @@
 The goal for this project is to identify restaurants/food establishments that are likely to fail the next food inspection based on the results of previous reviews. The main challenge lies in the proper use of temporal and textual data contained in the set.
 Food safety is not to be taken lightly as it is a matter of public health. Food inspections aim to reduce the sanitary risks associated with poor practices in the food service industry. Building a model that would help large cities predict which establishments to target first would further mitigate these risks.
 
-_Update (November 25 2019) :_ The goal was adapted : the project aims to predict the result of inspections based on a seat of features including inspections' and restaurants' characteristics.
+_Update (November 25 2019) :_ The goals was adapted. The new objective is to predict the result of inspections based on a seat of features including inspections' and restaurants' characteristics.
 
 ## The data
 
