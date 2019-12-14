@@ -9,14 +9,14 @@
 
 ## The project
 
-The goal for this project is to identify restaurants/food establishments that are likely to fail the next food inspection based on the results of previous reviews. The main challenge lies in the proper use of temporal and textual data contained in the set.
+The goal for this project is to predict the result of inspections based on a set of features including inspections' and restaurants' characteristics which can be retrieved from previous reviews. The main challenge lies in the proper use of temporal data contained in the set.
 Food safety is not to be taken lightly as it is a matter of public health. Food inspections aim to reduce the sanitary risks associated with poor practices in the food service industry. Building a model that would help large cities predict which establishments to target first would further mitigate these risks.
 
-_Update (2019, November 25) :_ The goals was adapted. The new objective is to predict the result of inspections based on a set of features including inspections' and restaurants' characteristics.
+_Update (2019, November 25) :_ The goals was adapted due to time constraint.
 
 ## The data
 
-The data set was found on the City of Chicago's data portal. The City provides records for past food inspections conducted from January 1, 2010 to the present. The dimensionality is 17, while the cardinality is 195’736 (as of ‎2019, November 9 [04:06 PM]).
+The data set was found on the City of Chicago's data portal. The City provides records for past food inspections conducted from January 1, 2010 to the present. The dimensionality is 17, while the cardinality is 195’736 (as of 2019, November 9 [04:06 PM]).
 The set contains information about violations that were observed during the inspections, the risk assessment of the establishment, the facility type of the establishments and location amongst other things.
 
 **Note :** There is a file called "SOURCES" in which the different datasets used in this project are regrouped.
@@ -26,8 +26,8 @@ Data augmentation possibilities are :
 - Use the weather history for Chicago to compute the average maximum temperature of the last 3 days before inspection and also retrieve the maximum temperature on the day of inspection.
 - Use the license ID to retrieve the approximate date of creation of the business from another data set available on the same portal (Business Licenses, see sources).
 - Extract information from other features in the original dataset. For instance, the week day (Monday, Tuesday, ...) of the inspection based on the date.
-- ~~Retrieve information about the location using an API~~ (such as Microsoft Bing Maps’ API, the validity of this method was assessed and the method was abandoned because information that could be retrieved was limited.).
-- ~~Use the coordinates to determine the neighbourhood in which an establishment is settled~~ (used geographic coordinates instead).
+- ~~Retrieve information about the location using an API, such as Microsoft Bing Maps’ API.~~ (The validity of this method was assessed and it was abandoned because information that could be retrieved was limited).
+- ~~Use the coordinates to determine the neighbourhood in which an establishment is settled.~~ (Used geographic coordinates instead).
 
 Source: City of Chicago (2019, November 9). Food Inspections. Chicago Data Portal. Retrieved from https://data.cityofchicago.org/Health-Human-Services/Food-Inspections/4ijn-s7e5.
 
@@ -35,8 +35,7 @@ _Update (2019, December 9) :_ Revision of data augmentation possibilities.
 
 ## The approach
 
-The methods used for this project will primarily be classification and text analytics. The latter would be used to process textual information (i.e. “description of the findings that caused the violation”) in order to compute a score that would indicate if the staff comments are positive or negative.
-Logistic regression seems to be a valid approach for the second step which would be a binary classification (“fail” or “pass”) or multiclass classification (if the third class “pass with conditions” was added).
+The problem driving this project is binary classification (“fail” or “pass” the inspection). First, a range of classifiers (including decision tree, random forest, kNN, logistic regression) are assessed. Then, the models yielding the best results jointly contribute to the final outcome through a voting system.
 
 _Update (2019, November 25) :_ The initial idea was to work on time series. Due to time constraint, the scope of the project was adapted. The classification will be applied to inspections individually with a variety of classifiers which has to be determined.
 
@@ -58,4 +57,4 @@ Several notebooks were created for this project :
 
 - The scope of the project was adapted.
 - Text analysis for violations was ruled out.
-- In July 2018, there was a change in the regulation. As a result, new violations were created and the classification (minor, serious, critical) changed. Dropping the inspections that occurred after July 1 could solve the issue. Alternatively, the "Violations" feature could be dropped and compensated with other features (ex : total duration of activity).
+- In July 2018, there was a change in the regulation. As a result, new violations were created and their classification (minor, serious, critical) changed. Dropping the inspections that occurred after July 1 could solve the issue. Alternatively, the "Violations" feature could be dropped and compensated with other features (ex : total duration of activity).
