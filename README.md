@@ -13,6 +13,8 @@ The goal for this project is to predict the result of inspections based on a set
 
 Food safety is not to be taken lightly as it is a matter of public health. Food inspections aim to reduce the sanitary risks associated with poor practices in the food service industry. Building a model that would help large cities predict which establishments to target first would further mitigate these risks.
 
+Another opportunity arises from this project for businesses interested in helping establishments pass the inspection. The insights provided by machine learning could be used to better target their potential clients.
+
 _Update (2019, November 25) :_ The goals was adapted due to time constraint.
 
 ## The data
@@ -36,7 +38,7 @@ _Update (2019, December 9) :_ Revision of data augmentation possibilities.
 
 ## The approach
 
-The problem driving this project is binary classification (“fail” or “pass” the inspection). First, a range of classifiers (including decision tree, random forest, kNN, logistic regression) are assessed. Then, the models yielding the best results jointly contribute to the final outcome through a voting system.
+The problem driving this project is binary classification (“fail” or “pass” the inspection). First, a range of classifiers (including decision tree, random forest, kNN, logistic regression) are assessed. Then, the models yielding the best results jointly contribute to the final decision through a voting system.
 
 _Update (2019, November 25) :_ The initial idea was to work on time series. Due to time constraint, the scope of the project was adapted. The classification will be applied to inspections individually with a variety of classifiers which has to be determined.
 
@@ -52,7 +54,7 @@ Several notebooks were created for this project :
 - Classifying the inspection staff's comments could be tricky due to unlabelled data. One possibility could be to use the risk indicator 1 (low) and 3 (high) and the inspection result to train the classifier. The underlying assumption is that comments for high risk establishments should be more negative and comments for low risk establishments more positive. The feasibility still has to be discussed.
 - One feature that could be taken into account would be the temperature average in the last 5 days before inspection.
 - Another feature could be the cuisine type (https://developer-tripadvisor.com/content-api/business-content/cuisines/) accessed through TripAdvisor API.
-- TripAdvisor API allows requests about the "cleanliness rating" and could be use as a feature. There is one issue though, only the current rating can be retrieved, which does not reflect the rating variation over time.
+- TripAdvisor API allows requests about the "cleanliness rating" and could be used as a feature. There is one issue though, only the current rating can be retrieved, which does not reflect the rating variation over time.
 
 ## Post-feedback remarks (2019, November 25) :
 
