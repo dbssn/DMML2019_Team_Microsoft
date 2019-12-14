@@ -3,6 +3,16 @@
 ## Data set files
 The data sets used for this project exceed the limit size and can therefore not be uploaded to GitHub. The links to the files can be found below.
 
+## Augmented data set
+This is the final data set that is used for classification in this project. It was created using the following dats sets : "Food inspections", "Business licenses", "NOAA Weather history".
+
+**Link :** https://drive.switch.ch/index.php/s/Gs1wqzxkNeCppeC/download
+
+## Clean version of the main data set
+This file is the cleaned version of the data set right below.
+
+**Link :** https://drive.switch.ch/index.php/s/jBrNwNiAGh7LcXX/download
+
 ## Food inspections (main data set)
 This file contains records for past food inspections conducted from January 1, 2010 to November 16, 2019.
 
@@ -24,14 +34,14 @@ This file contains the maximum air temperature (in °C) for Chicago Midway Airpo
 
 **Source:** National Oceanic and Atmospheric Administration (2019, November 25).  Daily Summaries Location Details. _National Centers for Environmental Information._ Retrieved from https://www.ncdc.noaa.gov/cdo-web/datasets/GHCND/locations/CITY:US170006/detail (2019, November 25).
 
-## Neighbourhoods boundaries
+## Neighbourhoods boundaries (was not used in the end)
 This file contains the boundaries for each neighbourhood in Chicago City.
 
 **Link:** https://drive.switch.ch/index.php/s/X1xkTQwhc8TLDyp/download
 
 **Source:** City of Chicago (2018, July 11).  Boundaries - Neighborhoods. _Chicago Data Portal._ Retrieved from https://data.cityofchicago.org/Facilities-Geographic-Boundaries/Boundaries-Neighborhoods/bbvz-uum9 (2019, November 17).
 
-## Sanitation Code Complaints
+## Sanitation Code Complaints (was not used in the end)
 This file contains sanitation complaints registered by Chicago City.
 
 **Link:** https://drive.switch.ch/index.php/s/XiG6llBQtX22pTv/download
