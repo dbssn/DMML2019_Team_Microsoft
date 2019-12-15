@@ -47,7 +47,7 @@ Several notebooks were created for this project :
 - _0_data_cleaning.ipynb :_ The data needed to be cleaned in some aspects. Choices were made regarding which classes to keep for categorical features such as "Facility Type" for which more than 400 classes existed. Missing data was dealt with. Also, some features in the original data set were dropped.
 - _1_augmentation.ipynb :_ This file is the concretisation of the data augmentation possibilities which were presented above.
 - _2_complementary_EDA.ipynb :_ This file contains complementary exploratory data analysis which provides an insight on the data that will be used for this project. This includes map visualisation, histograms, etc.
-- _3_prediction.ipynb :_ All the models tested are regrouped in this file. After normalising and encoding the data, several models were tested and assessed. This includes : logistic regression, (TO BE UPDATED WITH OTHER TECHNIQUES).
+- _3_prediction.ipynb :_ All the models tested are regrouped in this file. After normalising and encoding the data, several models were tested and assessed. This includes : decision tree, random forest, kNN, logistic regression.
 
 ## Post-feedback remarks (2019, November 18) :
 
