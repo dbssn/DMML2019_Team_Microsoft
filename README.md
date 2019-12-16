@@ -48,6 +48,7 @@ Several notebooks were created for this project :
 - _1_augmentation.ipynb :_ This file is the concretisation of the data augmentation possibilities which were presented above.
 - _2_complementary_EDA.ipynb :_ This file contains complementary exploratory data analysis which provides an insight on the data that will be used for this project. This includes map visualisation, histograms, etc.
 - _3_prediction.ipynb :_ All the models tested are regrouped in this file. After normalising and encoding the data, several models were tested and assessed. This includes : decision tree, random forest, kNN, logistic regression.
+- _4_conclusion_remarks.ipynb :_ This notebook contains the conclusions and remarks for this project as well as the video and contributions from the team members.
 
 ## Post-feedback remarks (2019, November 18) :
 
